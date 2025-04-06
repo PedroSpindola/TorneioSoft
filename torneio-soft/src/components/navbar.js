@@ -38,7 +38,7 @@ function Navbar() {
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Crie um torneio</button>
                     </form>
                 </div>
             </div>

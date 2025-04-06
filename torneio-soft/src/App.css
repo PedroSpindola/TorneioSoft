@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.centralizarImagem { 
+  display:         flex;
+  display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
+
+  justify-content: center;
+  align-items: center;
+}
