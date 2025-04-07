@@ -2,21 +2,27 @@ import React from "react";
 import 'bootswatch/dist/vapor/bootstrap.css'
 import Navbar from "../components/navbar";
 import '../App.css';
+import Rotas from '../rotas.js';
+import { useNavigate } from "react-router-dom";
 
 
 function Home() {
+    const navigate = useNavigate()
 
+    const acessarLogin = () => {
+        navigate(`/login`);
+      };
     return (
 
         <div className="container">
-            <Navbar />
+            <Navbar/>
             <div>
                 <div class="card mb-3">
                     <h3 class="">Crie o seu torneio</h3>
                     <img src="torneio-soft\src\imagens\torneioHome.jpg" width="100%" height="200"/>
                     <div class="">
                         <p class="">Monte seu próprio torneio de futsal com poucos cliques! Cadastre-se e organize partidas, equipes e tabelas direto pelo nosso site.</p>
-                        <button type="button" class="btn btn-primary btn-lg">Monte já!</button>
+                        <button type="button" class="btn btn-primary btn-lg" onClick={()=> acessarLogin() }>Monte já!</button>
                     </div>
                 </div>
                 <div class="card mb-3">
